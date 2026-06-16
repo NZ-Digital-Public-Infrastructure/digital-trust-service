@@ -65,8 +65,22 @@ The [Sale and Supply of Alcohol Regulations 2013](https://www.legislation.govt.n
 > (c) it contains information purporting to relate to the person’s age or to be the person’s date of birth; and
 > 
 > (d) the information referred to in paragraphs (b) and (c) meets the requirements of the standard+, strong+, or very strong level of assurance as determined by the TF authority under the Digital Identity Services Trust Framework Act 2023.
-> 
-These requirements are also referred to by other legislation that requires proof of a 
+
+The requirements of the Sale and Supply of Alcohol evidence of age are also referred to in other legislation that require proof of age:
+
+| Act | Context |
+|-----|---------|
+| [Gambling Act 2003](https://www.legislation.govt.nz/act/public/2003/0051/latest/whole.html) | Applies to age 18+ restriction on instant games (section 301) and gaming machines (class 4 gambling, section 302), and age 20+ restriction on casino gambling areas  |
+| [Racing Industry Act 2020](https://www.legislation.govt.nz/act/public/2020/0028/latest/whole.html) | Applies to age verification at TAB and racing venues |
+| [Smokefree Environments and Regulated Products Act 1990](https://www.legislation.govt.nz/act/public/1990/0108/latest/whole.html) | Applies to age verification for the sale of tobacco and vaping products (section 40) |
+| [Health Act 1956](https://www.legislation.govt.nz/act/public/1956/0065/latest/whole.html) | Applies to age verification for commercial artificial UV tanning (sunbed) services under section 114 |
+
+The DTS content will allow confirmation that a presented credential fulfils the accreditation requirement under regulation 5A(a). The relying party product can confirm that the credential includes claims that satisfy 5A(b) and 5A(c). 
+
+> [!IMPORTANT]
+> To preserve user privacy, relying parties should use zero-knowledge proof principles when verifying credentials. For age verification this means checking for `age_over_nn` boolean claim values instead of date of birth.
+
+There is no standardised way for conveying the Level of Assurance (LoA) for an accredited credential in a VICAL. Details of LoA for the accredited credentials will be published in the DTS online register when it is available, to facilitate understanding of whether the credential meets the requirement of regulation 5A(d). The LoA for credentials associated with IACAs in the VICAL will also be published on this page. 
 
 ### Costs
 There is no fee for use of the DTS.
