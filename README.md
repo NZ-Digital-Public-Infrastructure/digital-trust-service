@@ -1,11 +1,5 @@
 # The Digital Credential Digital Trust Service
 
-<span style="color:red">**Tracking notes [to remove]:**<br/>
-Updated VICAL URLs added, can't publish until redirects are in place<br/>
-Finalise link to the relying party technical guide
-</span>
-
-
 ## Purpose
 The New Zealand Government Digital Trust Service (DTS) is operated as part of the [Digital Public Infrastructure](https://github.com/NZ-Digital-Public-Infrastructure/.github/blob/main/profile/README.md) (DPI) to provide an authoritative source of credential issuing authorities who are accredited under the [Digital Identify Services Trust Framework (DISTF)](https://www.publicservice.govt.nz/about-the-commission/government-digital-delivery-agency/trust-framework-for-digital-identity/about-digital-identity-services/trust-framework-legislation).
 
