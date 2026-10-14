@@ -1,8 +1,17 @@
 # The Digital Credential Digital Trust Service
+
+<span style="color:red">**Tracking notes [to remove]:**<br/>
+Updated VICAL URLs added, can't publish until redirects are in place<br/>
+Finalise link to the relying party technical guide
+</span>
+
+
 ## Purpose
 The New Zealand Government Digital Trust Service (DTS) is operated as part of the [Digital Public Infrastructure](https://github.com/NZ-Digital-Public-Infrastructure/.github/blob/main/profile/README.md) (DPI) to provide an authoritative source of credential issuing authorities who are accredited under the [Digital Identify Services Trust Framework (DISTF)](https://www.publicservice.govt.nz/about-the-commission/government-digital-delivery-agency/trust-framework-for-digital-identity/about-digital-identity-services/trust-framework-legislation).
 
-In the digital credentials ecosystem, the DTS fulfils the role of the Trust Register. Relying party products that consume digital credentials can refer to the DTS to identify whether a presented credential is DISTF accredited.     
+In the digital credentials ecosystem, the DTS fulfils the role of the Trust Register. Relying party products that consume digital credentials can refer to the DTS to identify whether a presented credential is DISTF accredited.   
+
+Refer to our [Relying Party technical guide](/Govt.nz%20app%20relying%20party%20guide.md) page for documentation of how to verify credentials held in the Govt.nz app wallet.
 
 ![Digital credential ecosystem diagram](/assets/ecosystem-diagram-trust-register-highlight.png "Digital credential ecosystem diagram")
 
@@ -32,21 +41,32 @@ A sandbox version of Digital Public Infrastructure products are provided for use
 
 Credential issuers can get their test issuing party details added to the sandbox version of the VICAL to facilitate full end-to-end testing of their credential and its use by relying parties.
 
-### VICAL
+## VICAL
+
+### Sandbox
 The sandbox VICAL can be downloaded here:
 
 ```
-https://sandbox-tfa.vii.nz01.mattr.global/v1/ecosystems/e0b4fc11-8c0c-4d4d-9615-0b7d0af0661c/vicals/public/latest
+https://sandbox.tfa.digital.govt.nz/e0b4fc11-8c0c-4d4d-9615-0b7d0af0661c/vicals/public/latest
 ```
 
 The sandbox DTS root CA certificate can be retrieved here:
 
 ```
-https://sandbox-tfa.vii.nz01.mattr.global/v1/ecosystems/public/certificates/ca
+https://sandbox.tfa.digital.govt.nz/public/certificates/ca
 ```
 
-Production endpoints will be added here when the first accredited credentials are available.
+### Production
+The production VICAL can be downloaded here:
 
+```
+https://tfa.digital.govt.nz/cf4e1b17-b982-4b2e-bbda-b4f32083fd4b/vicals/public/latest
+```
+The sandbox DTS root CA certificate can be retrieved here:
+
+```
+https://tfa.digital.govt.nz/public/certificates/ca
+```
 
 ## Verification responsibilities
 It is the responsibility of the relying party to ensure they are accepting credentials that are legally applicable to their verification purpose.
